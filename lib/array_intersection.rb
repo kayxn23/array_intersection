@@ -13,8 +13,19 @@ def intersection(array1, array2)
   return commons
 end
 
+# Space Complexity:
+#Worst case is O(n) where n is the length of the sorter/smaller array.
+# Which is held in the variable 'commons'
+#
+# Time Complexity:
+# Worst case is O(n^2) aka quadratic.
+# There are two loops, for each element in the first loop
+# the second loop will run through all of its elements once.
 
 
+
+
+#can use for refactoring later 
 # def sort(array)
 #   i = 0
 #   j = 1
