@@ -1,18 +1,13 @@
-# Creates a new array to return the intersection of the two input arrays
-def intersection(array1, array2)
-  return [] if array1.nil? || array2.nil?
-  # [2,5,4,1,89]
-  
-
-end
-
-
 def sort(array)
+  puts "#{array}"
   i = 0
   j = 1
   holder = 0
 
   while i < array.length - 1
+    puts "array[i]#{array[i]}"
+    puts "array[j]#{array[j]}"
+
     if array[i] < array[j]
       i += 1
       j += 1
@@ -26,8 +21,7 @@ def sort(array)
       array[j] = holder #4
     end
   end
-  return array
+  puts "result #{array}"
 end
 
-# loop1 2,5
-# loop2 5,4
+puts sort([5,1,8])
